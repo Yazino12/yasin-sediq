@@ -1,67 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
-    <title>Fork Me! FCC: Test Suite Template</title>
+    <title>Landing Page</title>
     <link rel="stylesheet" href="css/style.css" />
-</head>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        background-color: #eee;
+      }
 
-<body>
-    <div id="landing">
-        <header id="header">
-            <img src="logo.png" id="header-img" />
-            <nav id="nav-bar">
-                <ul>
-                    <li class="nav-link"><a href="#first">Link</a></li>
-                    <li class="nav-link"><a href="#second">Link</a></li>
-                    <li class="nav-link"><a href="#third">Link</a></li>
-                </ul>
-            </nav>
-        </header>
-        <section id=first>
-            <h2>Section1</h2>
-        </section>
-        <section id="second">
-            <div><iframe id="video" width="420" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY"></div>
-  </iframe></section>
-        <section id="third">
-            <h2>third section</h2>
-            <p>this is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a test</p>
-            <p>this is a test this is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a test</p>
-            <p>this is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a test</p>
-            <p>this is a test this is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a test</p>
-            <p>this is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a test</p>
-            <p>this is a test this is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a test</p>
-            <p>this is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a test</p>
-            <p>this is a test this is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a test</p>
-            <p>this is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a test</p>
-            <p>this is a test this is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a test</p>
-            <p>this is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a test</p>
-            <p>this is a test this is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a test</p>
-            <p>this is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a test</p>
-            <p>this is a test this is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a test</p>
-            <p>this is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a test</p>
-            <p>this is a test this is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a test</p>
-            <p>this is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a test</p>
-            <p>this is a test this is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a test</p>
-            <p>this is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a test</p>
-            <p>this is a test this is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a test</p>
-            <p>this is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a test</p>
-            <p>this is a test this is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a test</p>
-            <p>this is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a test</p>
-            <p>this is a test this is a testthis is a testthis is a testthis is a testthis is a testthis is a testthis is a test</p>
-            <form id="form" action="https://www.freecodecamp.com/email-submit">
-                <input type="email" id="email" name="email" placeholder="email" />
-                <input type="submit" value="Submit" id="submit">
+      @media screen and (min-width: 200px) {
+        body {
+          background-color: #eee;
+        }
+      }
+    </style>
+  </head>
 
+  <body>
+    <header id="header">
+      <div class="logo">
+        <img
+          src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png"
+          id="header-img"
+        />
+      </div>
+      <nav id="nav-bar">
+        <ul>
+          <li><a class="nav-link" href="#features">Features</a></li>
+          <li><a class="nav-link" href="#how-it-works">How It Works</a></li>
+          <li><a class="nav-link" href="#pricing">Pricing</a></li>
+        </ul>
+      </nav>
+    </header>
 
-            </form>
-        </section>
+    <div></div>
+
+    <div id="hero">
+      <h2>Check Out Here</h2>
+      <form id="form" action="https://www.freecodecamp.com/email-submit">
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="email"
+          required
+        />
+        <input type="submit" value="submit" id="submit" />
+      </form>
+    </div>
+
+    <section id="features">
+      <div class="container">
+        <div class="item">
+          <h1>First Feature</h1>
+          <p>
+            first product is the first in all cases and that will not change
+            alot of the things that happen here
+          </p>
         </div>
+        <div class="item">
+          <h1>Second Feature</h1>
+          <p>
+            first product is the first in all cases and that will not change
+            alot of the things that happen here
+          </p>
+        </div>
+        <div class="item">
+          <h1>Third Feature</h1>
+          <p>
+            first product is the first in all cases and that will not change
+            alot of the things that happen here
+          </p>
+        </div>
+      </div>
+    </section>
 
-        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js "></script>
-        <script src="js/index.js "></script>
-</body>
+    <section id="how-it-works">
+      <div>
+        <iframe
+          id="video"
+          width="420"
+          height="315"
+          src="https://www.youtube.com/embed/tgbNymZ7vqY"
+          height="315"
+          frameborder="0"
+          allowfullscreen
+        >
+        </iframe>
+      </div>
+    </section>
 
+    <section id="pricing">
+      <div class="payments">
+        <div class="level">Bass Trombone</div>
+        <h2>$900</h2>
+        <ol>
+          <li>Lorem ipsum.</li>
+          <li>Lorem ipsum.</li>
+          <li>Lorem ipsum dolor.</li>
+          <li>Lorem ipsum.</li>
+        </ol>
+        <button class="btn">Select</button>
+      </div>
+      <div class="payments">
+        <div class="level">Bass Trombone</div>
+        <h2>$900</h2>
+        <ol>
+          <li>Lorem ipsum.</li>
+          <li>Lorem ipsum.</li>
+          <li>Lorem ipsum dolor.</li>
+          <li>Lorem ipsum.</li>
+        </ol>
+        <button class="btn">Select</button>
+      </div>
+      <div class="payments">
+        <div class="level">Bass Trombone</div>
+        <h2>$900</h2>
+        <ol>
+          <li>Lorem ipsum.</li>
+          <li>Lorem ipsum.</li>
+          <li>Lorem ipsum dolor.</li>
+          <li>Lorem ipsum.</li>
+        </ol>
+        <button class="btn">Select</button>
+      </div>
+    </section>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js "></script>
+    <script src="js/index.js "></script>
+  </body>
 </html>
