@@ -1,0 +1,32 @@
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+#landing {
+    position: relative;
+}
+
+header {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: bisque;
+}
+
+.nav-link {
+    display: inline;
+    padding: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+@media screen and (min-width: 480px) {
+    body {
+        background-color: azure;
+    }
+}
